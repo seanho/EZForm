@@ -73,7 +73,13 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-	self.barStyle = UIBarStyleBlackTranslucent;
+        if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] != NSOrderedAscending)
+        {
+            self.barStyle = UIBarStyleDefault;
+        }
+        else {
+            self.barStyle = UIBarStyleBlackTranslucent;
+        }
 	_previousNextControl = [[UISegmentedControl alloc] initWithItems:@[@"Previous", @"Next"]];
 	_previousNextControl.segmentedControlStyle = UISegmentedControlStyleBar;
 	_previousNextControl.momentary = YES;
