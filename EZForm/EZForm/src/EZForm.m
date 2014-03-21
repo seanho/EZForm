@@ -252,7 +252,7 @@
 	CGRect fieldViewFrame = CGRectNull;
 	if (CGRectIsEmpty(self.autoScrollForKeyboardInputVisibleRect)) {
 	    UIView *formFieldView = [formField userView];
-	    if (formFieldView) fieldViewFrame = formFieldView.frame;
+	    if (formFieldView) fieldViewFrame = [self.viewToAutoScroll convertRect:formFieldView.frame fromView:formFieldView];
 	}
 	else {
 	    fieldViewFrame = CGRectInset(self.autoScrollForKeyboardInputVisibleRect, -self.autoScrollForKeyboardInputPaddingSize.width, -self.autoScrollForKeyboardInputPaddingSize.height); // add some padding
