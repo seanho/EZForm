@@ -84,6 +84,7 @@
 /* Begin PBXFileReference section */
 		5273AD4F16DD0FEB0007C079 /* EZFormDateField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZFormDateField.h; sourceTree = "<group>"; };
 		5273AD5016DD0FEB0007C079 /* EZFormDateField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZFormDateField.m; sourceTree = "<group>"; };
+		5FE1E6AC18DBDF9D0087ED79 /* EZFormTextField+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZFormTextField+Private.h"; sourceTree = "<group>"; };
 		839EE8C7169529DE00B9DCA8 /* libEZForm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEZForm.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		839EE8CA169529DE00B9DCA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		839EE8CE169529DE00B9DCA8 /* EZForm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EZForm-Prefix.pch"; sourceTree = "<group>"; };
@@ -245,6 +246,7 @@
 				839EE8FC16952A3D00B9DCA8 /* EZFormField.m */,
 				839EE8FA16952A3D00B9DCA8 /* EZFormField+Private.h */,
 				839EE8FD16952A3D00B9DCA8 /* EZFormFieldConcreteProtocol.h */,
+				5FE1E6AC18DBDF9D0087ED79 /* EZFormTextField+Private.h */,
 				839EE90916952A3D00B9DCA8 /* EZFormTextField.h */,
 				839EE90A16952A3D00B9DCA8 /* EZFormTextField.m */,
 				839EE8FE16952A3D00B9DCA8 /* EZFormGenericField.h */,

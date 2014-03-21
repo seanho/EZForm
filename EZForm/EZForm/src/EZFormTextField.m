@@ -24,7 +24,7 @@
 
 #import "EZFormTextField.h"
 #import "EZForm+Private.h"
-
+#import "EZFormTextField+Private.h"
 
 @interface UIView (EZFormTextFieldExtension)
 @property (readwrite, strong, nonatomic) UIView *inputAccessoryView;

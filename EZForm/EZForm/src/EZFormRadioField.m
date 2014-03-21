@@ -24,7 +24,7 @@
 
 #import "EZFormRadioField.h"
 #import "EZForm+Private.h"
-
+#import "EZFormTextField+Private.h"
 
 #pragma mark - External Class Categories
 
@@ -54,6 +54,14 @@
 
 @dynamic inputView;
 
+#pragma mark - Input control events
+
+- (void)inputControlEditingDidBegin:(id)sender
+{
+    [super inputControlEditingDidBegin:sender];
+    
+    [self updateInputViewAnimated:NO];
+}
 
 #pragma mark - Public methods
 
@@ -179,11 +187,13 @@
 	    NSUInteger index = [self.orderedKeys indexOfObject:self.fieldValue];
 	    if (index != NSNotFound) {
 		if (self.unselected) index++;
-		if (index != (NSUInteger)[pickerView selectedRowInComponent:0]) {
-		    [pickerView selectRow:(NSInteger)index inComponent:0 animated:animated];
-		}
+		[pickerView selectRow:(NSInteger)index inComponent:0 animated:animated];
 	    }
 	}
+        else
+        {
+            [pickerView selectRow:0 inComponent:0 animated:animated];
+        }
     }
 }
 
