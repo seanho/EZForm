@@ -37,7 +37,11 @@
     return YES;
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Woverriding-method-mismatch"
+#pragma clang diagnostic ignored "-Wmismatched-return-types"
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
+#pragma clang diagnostic pop
 {
     if (self.navigationController) {
 	/* If managed by a nav controller then return rotation choice of previous view
