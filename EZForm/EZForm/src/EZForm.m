@@ -184,7 +184,7 @@
     UIView *invalidIndicatorView = nil;
     
     if (EZFormInvalidIndicatorViewTypeTriangleExclamation == invalidIndicatorViewType) {
-	invalidIndicatorView = [[EZFormInvalidIndicatorTriangleExclamationView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, size.width, size.height)];
+	invalidIndicatorView = [[EZFormInvalidIndicatorTriangleExclamationView alloc] initWithFrame:CGRectMake(0.0, 0.0, size.width, size.height)];
     }
     
     return invalidIndicatorView;
@@ -285,7 +285,7 @@
     UIScrollView *scrollView = (UIScrollView *)self.viewToAutoScroll;
     CGRect convertedKeyboardFrame = [[scrollView superview] convertRect:_visibleKeyboardFrame fromView:nil];
     CGRect intersectsRect = CGRectIntersection(scrollView.frame, convertedKeyboardFrame);
-    if (intersectsRect.size.height > 0.0f) {
+    if (intersectsRect.size.height > 0.0) {
 	UIEdgeInsets contentInset;
 	UIEdgeInsets scrollIndicatorInsets;
 	
@@ -453,7 +453,7 @@
 	if (nil == self.inputAccessoryStandardView) {
 	    // Create and cache it
 	    // It will be resized automatically to match keyboard
-	    EZFormStandardInputAccessoryView *accessoryView = [[EZFormStandardInputAccessoryView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 44.0f)];
+	    EZFormStandardInputAccessoryView *accessoryView = [[EZFormStandardInputAccessoryView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 44.0)];
             if (self.inputAccessoryViewTintColor)
             {
                 accessoryView.tintColor = self.inputAccessoryViewTintColor;
@@ -588,7 +588,7 @@
 	_autoScrolledViewOriginalContentInset = UIEdgeInsetsZero;
 	_autoScrolledViewOriginalFrame = CGRectNull;
 	_autoScrolledViewOriginalScrollIndicatorInsets = UIEdgeInsetsZero;
-	_autoScrollForKeyboardInputPaddingSize = CGSizeMake(0.0f, 10.0f);
+	_autoScrollForKeyboardInputPaddingSize = CGSizeMake(0.0, 10.0);
 	_autoScrollForKeyboardInputVisibleRect = CGRectZero;
 	_scrollViewInsetsWereSaved = NO;
         _inputAccessoryViewTranslucent = YES;
