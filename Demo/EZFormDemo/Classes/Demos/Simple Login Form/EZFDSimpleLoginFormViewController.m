@@ -26,7 +26,7 @@
 #import "EZFDSimpleLoginFormViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-#define kFormInvalidIndicatorViewSize 16.0f
+#define kFormInvalidIndicatorViewSize 16.0
 
 static NSString * const EZFDLoginFormPasswordKey = @"password";
 static NSString * const EZFDLoginFormUsernameKey = @"username";
@@ -64,7 +64,7 @@ static NSString * const EZFDLoginFormUsernameKey = @"username";
     EZFormTextField *usernameField = [[EZFormTextField alloc] initWithKey:EZFDLoginFormUsernameKey];
     usernameField.validationMinCharacters = 1;
     usernameField.inputMaxCharacters = 32;
-    usernameField.invalidIndicatorView = [EZForm formInvalidIndicatorViewForType:EZFormInvalidIndicatorViewTypeTriangleExclamation size:CGSizeMake(kFormInvalidIndicatorViewSize, kFormInvalidIndicatorViewSize)];
+    usernameField.invalidIndicatorView = [EZForm formInvalidIndicatorViewForType:EZFormInvalidIndicatorViewTypeTriangleExclamation size:CGSizeMake((CGFloat)kFormInvalidIndicatorViewSize, (CGFloat)kFormInvalidIndicatorViewSize)];
     [_loginForm addFormField:usernameField];
     
     /* Add an EZFormTextField instance to handle the password field.
@@ -74,7 +74,7 @@ static NSString * const EZFDLoginFormUsernameKey = @"username";
     EZFormTextField *passwordField = [[EZFormTextField alloc] initWithKey:EZFDLoginFormPasswordKey];
     passwordField.validationMinCharacters = 4;
     passwordField.inputMaxCharacters = 32;
-    passwordField.invalidIndicatorView = [EZForm formInvalidIndicatorViewForType:EZFormInvalidIndicatorViewTypeTriangleExclamation size:CGSizeMake(kFormInvalidIndicatorViewSize, kFormInvalidIndicatorViewSize)];
+    passwordField.invalidIndicatorView = [EZForm formInvalidIndicatorViewForType:EZFormInvalidIndicatorViewTypeTriangleExclamation size:CGSizeMake((CGFloat)kFormInvalidIndicatorViewSize, (CGFloat)kFormInvalidIndicatorViewSize)];
     [_loginForm addFormField:passwordField];
 }
 
@@ -98,45 +98,34 @@ static NSString * const EZFDLoginFormUsernameKey = @"username";
     
     /* Add some padding around views that are auto scrolled for visibility.
      */
-    self.loginForm.autoScrollForKeyboardInputPaddingSize = CGSizeMake(0.0f, 89.0f);
+    self.loginForm.autoScrollForKeyboardInputPaddingSize = CGSizeMake((CGFloat)0.0, (CGFloat)89.0);
     
     
     /* Setup rest of the views to look nice (not form specific)
      */
     
-    self.loginFormView.layer.cornerRadius = 10.0f;
-    self.loginFormView.layer.shadowOffset = CGSizeMake(0.0f, 3.0f);
+    self.loginFormView.layer.cornerRadius = (CGFloat)10.0;
+    self.loginFormView.layer.shadowOffset = CGSizeMake((CGFloat)0.0, (CGFloat)3.0);
     self.loginFormView.layer.shadowOpacity = 0.7f;
     
     [self.invalidIndicatorKeyView addSubview:[EZForm formInvalidIndicatorViewForType:EZFormInvalidIndicatorViewTypeTriangleExclamation size:CGSizeMake(kFormInvalidIndicatorViewSize, kFormInvalidIndicatorViewSize)]];
     [self updateViewsForFormValidity];
 }
 
-- (void)viewDidUnload
-{
-    [self setLoginButton:nil];
-    [self setPasswordTextField:nil];
-    [self setUsernameTextField:nil];
-    
-    [self setLoginFormView:nil];
-    [self setInvalidIndicatorKeyView:nil];
-    [super viewDidUnload];
-    
-    /* Unwire (and release) all user views from the form fields.
-     */
-    [self.loginForm unwireUserViews];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-	return YES;
-    }
-    else {
-	return (interfaceOrientation == UIInterfaceOrientationPortrait);
-    }
-}
-
+//- (void)viewDidUnload
+//{
+//    [self setLoginButton:nil];
+//    [self setPasswordTextField:nil];
+//    [self setUsernameTextField:nil];
+//    
+//    [self setLoginFormView:nil];
+//    [self setInvalidIndicatorKeyView:nil];
+//    [super viewDidUnload];
+//    
+//    /* Unwire (and release) all user views from the form fields.
+//     */
+//    [self.loginForm unwireUserViews];
+//}
 
 #pragma mark - Login button status
 
@@ -144,13 +133,13 @@ static NSString * const EZFDLoginFormUsernameKey = @"username";
 {
     if ([self.loginForm isFormValid]) {
 	self.loginButton.enabled = YES;
-	self.loginButton.alpha = 1.0f;
+	self.loginButton.alpha = (CGFloat)1.0;
 	
 	self.invalidIndicatorKeyView.hidden = YES;
     }
     else {
 	self.loginButton.enabled = NO;
-	self.loginButton.alpha = 0.4f;
+	self.loginButton.alpha = (CGFloat)0.4;
 	
 	self.invalidIndicatorKeyView.hidden = NO;
     }

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:EZFormWrapper/EZFormWrapper.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Demo/EZFormDemo.xcodeproj">
    </FileRef>
    <FileRef

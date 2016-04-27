@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "839EE8C6169529DE00B9DCA8"
-               BuildableName = "libEZForm.a"
-               BlueprintName = "EZForm"
-               ReferencedContainer = "container:EZForm.xcodeproj">
+               BlueprintIdentifier = "68BC274A1CD17A48006198D1"
+               BuildableName = "EZForm.framework"
+               BlueprintName = "EZFormWrapper"
+               ReferencedContainer = "container:EZFormWrapper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "839EE8C6169529DE00B9DCA8"
-            BuildableName = "libEZForm.a"
-            BlueprintName = "EZForm"
-            ReferencedContainer = "container:EZForm.xcodeproj">
+            BlueprintIdentifier = "68BC274A1CD17A48006198D1"
+            BuildableName = "EZForm.framework"
+            BlueprintName = "EZFormWrapper"
+            ReferencedContainer = "container:EZFormWrapper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "839EE8C6169529DE00B9DCA8"
-            BuildableName = "libEZForm.a"
-            BlueprintName = "EZForm"
-            ReferencedContainer = "container:EZForm.xcodeproj">
+            BlueprintIdentifier = "68BC274A1CD17A48006198D1"
+            BuildableName = "EZForm.framework"
+            BlueprintName = "EZFormWrapper"
+            ReferencedContainer = "container:EZFormWrapper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

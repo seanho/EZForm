@@ -33,7 +33,6 @@
  *  $ appledoc --project-name EZForm --project-company "Chris Miles" --company-id info.chrismiles EZForm
  */
 
-
 #import <Foundation/Foundation.h>
 #import "EZFormField.h"
 #import "EZFormBooleanField.h"

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68B874861CD19AF400914A95 /* EZForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B874851CD19AF400914A95 /* EZForm.framework */; };
 		8329EAF2155339E900ED3F5E /* EZFDRegistrationFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8329EAF1155339E900ED3F5E /* EZFDRegistrationFormViewController.m */; };
 		8369763715494EA00070EDEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8369763615494EA00070EDEC /* UIKit.framework */; };
 		8369763915494EA00070EDEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8369763815494EA00070EDEC /* Foundation.framework */; };
@@ -20,35 +21,11 @@
 		83F323A415522CBE006FC7B2 /* EZFDSimpleLoginFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F323A315522CBE006FC7B2 /* EZFDSimpleLoginFormViewController.m */; };
 		83F323AB15526988006FC7B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F323AA15526988006FC7B2 /* QuartzCore.framework */; };
 		83F323AF15527268006FC7B2 /* EZFDMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F323AE15527268006FC7B2 /* EZFDMainMenuViewController.m */; };
-		88FFDCBA1775495200348C15 /* libEZForm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8878CF5A17754938008D0B0B /* libEZForm.a */; };
 		A5BCDD6017A956580009201A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5BCDD6217A956580009201A /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		8878CF5917754938008D0B0B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8878CF5417754937008D0B0B /* EZForm.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 839EE8C7169529DE00B9DCA8;
-			remoteInfo = EZForm;
-		};
-		8878CF5B17754938008D0B0B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8878CF5417754937008D0B0B /* EZForm.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 839EE8D8169529DE00B9DCA8;
-			remoteInfo = EZFormTests;
-		};
-		88FFDCB61775494C00348C15 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8878CF5417754937008D0B0B /* EZForm.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 839EE8C6169529DE00B9DCA8;
-			remoteInfo = EZForm;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		68B874851CD19AF400914A95 /* EZForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EZForm.framework; path = "../../../../Library/Developer/Xcode/DerivedData/EZForm-axbbbvfmcyzdamcyvncayrxnpynr/Build/Products/Debug-iphonesimulator/EZForm.framework"; sourceTree = "<group>"; };
 		8329EAF0155339E900ED3F5E /* EZFDRegistrationFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = EZFDRegistrationFormViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		8329EAF1155339E900ED3F5E /* EZFDRegistrationFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = EZFDRegistrationFormViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8369763215494EA00070EDEC /* EZFormDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZFormDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +51,6 @@
 		83F323AA15526988006FC7B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		83F323AD15527268006FC7B2 /* EZFDMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = EZFDMainMenuViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		83F323AE15527268006FC7B2 /* EZFDMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = EZFDMainMenuViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		8878CF5417754937008D0B0B /* EZForm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EZForm.xcodeproj; path = ../EZForm/EZForm.xcodeproj; sourceTree = "<group>"; };
 		A5BCDD6117A956580009201A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A5BCDD6317A956630009201A /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88FFDCBA1775495200348C15 /* libEZForm.a in Frameworks */,
+				68B874861CD19AF400914A95 /* EZForm.framework in Frameworks */,
 				83F323AB15526988006FC7B2 /* QuartzCore.framework in Frameworks */,
 				8369763715494EA00070EDEC /* UIKit.framework in Frameworks */,
 				8369763915494EA00070EDEC /* Foundation.framework in Frameworks */,
@@ -128,7 +104,7 @@
 		8369763515494EA00070EDEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8878CF5417754937008D0B0B /* EZForm.xcodeproj */,
+				68B874851CD19AF400914A95 /* EZForm.framework */,
 				83F323AA15526988006FC7B2 /* QuartzCore.framework */,
 				8369763615494EA00070EDEC /* UIKit.framework */,
 				8369763815494EA00070EDEC /* Foundation.framework */,
@@ -252,15 +228,6 @@
 			path = "Main Menu";
 			sourceTree = "<group>";
 		};
-		8878CF5517754937008D0B0B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8878CF5A17754938008D0B0B /* libEZForm.a */,
-				8878CF5C17754938008D0B0B /* EZFormTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,7 +242,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				88FFDCB71775494C00348C15 /* PBXTargetDependency */,
 			);
 			name = EZFormDemo;
 			productName = EZFormDemo;
@@ -303,35 +269,12 @@
 			mainGroup = 8369762715494EA00070EDEC;
 			productRefGroup = 8369763315494EA00070EDEC /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 8878CF5517754937008D0B0B /* Products */;
-					ProjectRef = 8878CF5417754937008D0B0B /* EZForm.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8369763115494EA00070EDEC /* EZFormDemo */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		8878CF5A17754938008D0B0B /* libEZForm.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libEZForm.a;
-			remoteRef = 8878CF5917754938008D0B0B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8878CF5C17754938008D0B0B /* EZFormTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = EZFormTests.octest;
-			remoteRef = 8878CF5B17754938008D0B0B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8369763015494EA00070EDEC /* Resources */ = {
@@ -362,14 +305,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		88FFDCB71775494C00348C15 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EZForm;
-			targetProxy = 88FFDCB61775494C00348C15 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8369763F15494EA00070EDEC /* InfoPlist.strings */ = {
@@ -541,7 +476,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EZFormDemo/EZFormDemo-Prefix.pch";
 				INFOPLIST_FILE = "EZFormDemo/EZFormDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -556,7 +491,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EZFormDemo/EZFormDemo-Prefix.pch";
 				INFOPLIST_FILE = "EZFormDemo/EZFormDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;

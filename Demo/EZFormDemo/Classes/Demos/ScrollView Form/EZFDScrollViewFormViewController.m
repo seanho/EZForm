@@ -99,13 +99,13 @@
 - (void)form:(EZForm *)form didUpdateValueForField:(EZFormField *)formField modelIsValid:(BOOL)isValid
 {
     #pragma unused(form)
-    DLog(@"formField: %@ isValid: %@", formField, (isValid?@"YES":@"NO"));
+    NSLog(@"formField: %@ isValid: %@", formField, (isValid ? @"YES": @"NO"));
 }
 
 - (void)formInputFinishedOnLastField:(EZForm *)form
 {
     BOOL isValid = [form isFormValid];
-    DLog(@"Form isValid: %@", (isValid ? @"YES":@"NO"));
+    NSLog(@"Form isValid: %@", (isValid ? @"YES": @"NO"));
 }
 
 @end
